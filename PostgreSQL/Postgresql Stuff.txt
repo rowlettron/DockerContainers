@@ -1,0 +1,2 @@
+pgadmin
+http://localhost:5050

@@ -1,0 +1,25 @@
+services:
+    mariadb:
+        container_name: db-mariadb
+        restart: unless-stopped
+        volumes:
+            - ./mariadb_data:/var/lib/mysql
+            - ./mariadb_logs:/var/log/mysql
+            - ./datashare:/datashare
+        image: mariadb:latest
+         #command: - default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_ROOT_PASSWORD: Trustno1@all
+            MYSQL_USER: python
+            MYSQL_PASSWORD: Trustno1@all
+            MYSQL_DATABASE: dev
+
+        ports:
+          # <Port exposed> : <MySQL Port running inside container>
+          - '3306:3306'
+        expose:
+          # Opens port 3306 on the container
+          - '3306'
+     
+     
+        
