@@ -166,14 +166,3 @@ cython_debug/
 ~/Documents/GitHub/DockerContainers/MSSQL/data/*.bin
 
 
-MSSql/data/Entropy.bin
-*.mdf
-*.ldf
-*.ndf
-MSSql/log/errorlog
-*.1
-*.2
-*.3
-*.xel
-*.trc
-MSSql/secrets/machine-key
